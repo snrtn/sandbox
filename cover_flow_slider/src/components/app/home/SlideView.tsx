@@ -108,11 +108,7 @@ const SlideView = () => {
           </div>
         )}
 
-        <Link
-          href={getSlideContent(currentSlide).link}
-          className={slideView.slideImageWrapper}
-          passHref
-        >
+        <Link href={"/"} className={slideView.slideImageWrapper} passHref>
           <div className={slideView.darkCenterOverlay}></div>
           <Image
             src={getSlideImage(currentSlide)}
