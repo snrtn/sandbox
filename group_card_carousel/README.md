@@ -1,6 +1,6 @@
 ## Project Link
 
-[See Project](https://coverflowslider-two.vercel.app/)
+[See Project](https://groupcardcarousel.vercel.app/)
 
 ## Project Preview
 
