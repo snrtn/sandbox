@@ -1,6 +1,6 @@
 ## Project Link
 
-[See Project](https://coverflowslider-one.vercel.app/)
+[See Project](https://coverflowslider-two.vercel.app/)
 
 ## Project Preview
 
