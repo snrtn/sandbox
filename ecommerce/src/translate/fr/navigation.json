@@ -1,0 +1,64 @@
+{
+  "side": {
+    "welcome": "Bienvenue",
+    "account": "Compte",
+    "suggestion": "Suggestion",
+    "for": "pour"
+  },
+
+  "menu": {
+    "men": {
+      "label": "Hommes",
+      "labelSingle": "Homme",
+      "sections": {
+        "upper": "Haut",
+        "lower": "Bas",
+        "footwear": "Chaussures"
+      },
+      "items": {
+        "tshirts": "T-Shirts",
+        "shorts": "Shorts",
+        "sneakers": "Baskets"
+      }
+    },
+    "women": {
+      "label": "Femmes",
+      "labelSingle": "Femme",
+      "sections": {
+        "upper": "Haut",
+        "lower": "Bas",
+        "footwear": "Chaussures",
+        "accessories": "Accessoires"
+      },
+      "items": {
+        "dresses": "Robes",
+        "tshirts": "T-Shirts",
+        "blouses": "Blouses",
+        "leggings": "Leggings",
+        "jeans": "Jeans",
+        "shorts": "Shorts",
+        "skirts": "Jupes",
+        "sandals": "Sandales",
+        "heels": "Talons",
+        "handbags": "Sacs à main"
+      }
+    },
+    "kids": {
+      "label": "Enfants",
+      "labelSingle": "Enfant",
+      "sections": {
+        "upper": "Haut",
+        "lower": "Bas",
+        "footwear": "Chaussures"
+      },
+      "items": {
+        "jackets": "Vestes",
+        "tshirts": "T-Shirts",
+        "sweaters": "Pulls",
+        "jeans": "Jeans",
+        "shorts": "Shorts",
+        "sneakers": "Baskets"
+      }
+    }
+  }
+}

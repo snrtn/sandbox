@@ -1,0 +1,64 @@
+{
+  "side": {
+    "welcome": "Welcome",
+    "account": "Account",
+    "suggestion": "Suggestion",
+    "for": "for"
+  },
+
+  "menu": {
+    "men": {
+      "label": "Men",
+      "labelSingle": "Man",
+      "sections": {
+        "upper": "Upper",
+        "lower": "Lower",
+        "footwear": "Footwear"
+      },
+      "items": {
+        "tshirts": "T-Shirts",
+        "shorts": "Shorts",
+        "sneakers": "Sneakers"
+      }
+    },
+    "women": {
+      "label": "Women",
+      "labelSingle": "Woman",
+      "sections": {
+        "upper": "Upper",
+        "lower": "Lower",
+        "footwear": "Footwear",
+        "accessories": "Accessories"
+      },
+      "items": {
+        "dresses": "Dresses",
+        "tshirts": "T-Shirts",
+        "blouses": "Blouses",
+        "leggings": "Leggings",
+        "jeans": "Jeans",
+        "shorts": "Shorts",
+        "skirts": "Skirts",
+        "sandals": "Sandals",
+        "heels": "Heels",
+        "handbags": "Handbags"
+      }
+    },
+    "kids": {
+      "label": "Kids",
+      "labelSingle": "Kid",
+      "sections": {
+        "upper": "Upper",
+        "lower": "Lower",
+        "footwear": "Footwear"
+      },
+      "items": {
+        "jackets": "Jackets",
+        "tshirts": "T-Shirts",
+        "sweaters": "Sweaters",
+        "jeans": "Jeans",
+        "shorts": "Shorts",
+        "sneakers": "Sneakers"
+      }
+    }
+  }
+}

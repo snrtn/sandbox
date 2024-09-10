@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.glassmorphism {
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+.glassmorphismlight {
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+/* scrollbar */
+.no-scroll {
+  overflow-x: hidden;
+  overflow-y: hidden;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.no-scroll::-webkit-scrollbar,
+.no-scroll-x::-webkit-scrollbar,
+.no-scroll-y::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+.no-scroll-x {
+  overflow-x: hidden;
+  overflow-y: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.no-scroll-y {
+  overflow-x: auto;
+  overflow-y: hidden;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+@layer utilities {
+  .section-padding {
+    @apply px-4;
+  }
+
+  @screen tablet-sm {
+    .section-padding {
+      @apply px-8;
+    }
+  }
+
+  @screen tablet-lg {
+    .section-padding {
+      @apply px-16;
+    }
+  }
+
+  @screen laptop-md {
+    .section-padding {
+      @apply px-24;
+    }
+  }
+
+  @screen laptop-xl {
+    .section-padding {
+      @apply px-32;
+    }
+  }
+
+  @screen desktop {
+    .section-padding {
+      @apply px-56;
+    }
+  }
+}

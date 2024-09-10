@@ -1,0 +1,11 @@
+{
+  "product": {
+    "color": "Couleur",
+    "size": "Taille",
+    "onesize": "taille unique",
+    "description": "Description",
+    "material": "Composition du matériau",
+    "careInstructions": "Instructions d'entretien",
+    "for": "pour"
+  }
+}
