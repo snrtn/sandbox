@@ -15,17 +15,29 @@ dotenv.config();
 const app = express();
 
 // CORS 설정
+const allowedOrigins = [
+  "http://localhost:3000", // 로컬 개발 환경
+  "https://your-vercel-app.vercel.app", // Vercel에 배포된 클라이언트 주소
+];
+
 const corsOptions = {
-  origin: process.env.ORIGIN || "https://portfolioui-nu.vercel.app", // 클라이언트 주소
-  credentials: true, // 쿠키를 허용
+  origin: (origin: any, callback: any) => {
+    if (allowedOrigins.indexOf(origin) !== -1 || !origin) {
+      callback(null, true); // 허용된 origin이거나 origin이 없는 경우(비공개) 허용
+    } else {
+      callback(new Error("Not allowed by CORS")); // 허용되지 않은 origin 차단
+    }
+  },
+  credentials: true, // 쿠키 허용
   methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
   allowedHeaders: ["Content-Type", "Authorization"],
   preflightContinue: false,
-  optionsSuccessStatus: 204, // 프리플라이트 응답 성공 상태 코드
+  optionsSuccessStatus: 204, // 프리플라이트 요청에 대한 응답 코드
 };
 
 // CORS 미들웨어 적용
 app.use(cors(corsOptions));
+app.options("*", cors(corsOptions)); // 모든 OPTIONS 요청에 대해 CORS 적용
 
 // 기타 미들웨어 설정
 app.use(express.json());
