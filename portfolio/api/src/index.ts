@@ -15,7 +15,7 @@ dotenv.config();
 const app = express();
 
 const corsOptions = {
-  origin: process.env.ORIGIN || "https://portfolioui-nu.vercel.app/",
+  origin: process.env.ORIGIN || "https://portfolioui-nu.vercel.app",
   credentials: true,
   methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
   allowedHeaders: ["Content-Type", "Authorization"],
