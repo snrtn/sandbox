@@ -6,6 +6,7 @@ import dashboardRoutes from "./routes/dashboardRoutes";
 import dotenv from "dotenv";
 import morgan from "morgan";
 import helmet from "helmet";
+import cors from "cors"; // CORS 미들웨어
 import errorHandler from "./middlewares/errorHandler";
 import cookieParser from "cookie-parser";
 
@@ -13,7 +14,20 @@ dotenv.config();
 
 const app = express();
 
-// 미들웨어 설정
+// CORS 설정
+const corsOptions = {
+  origin: process.env.ORIGIN || "https://portfolioui-nu.vercel.app", // 클라이언트 주소
+  credentials: true, // 쿠키를 허용
+  methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+  allowedHeaders: ["Content-Type", "Authorization"],
+  preflightContinue: false,
+  optionsSuccessStatus: 204, // 프리플라이트 응답 성공 상태 코드
+};
+
+// CORS 미들웨어 적용
+app.use(cors(corsOptions));
+
+// 기타 미들웨어 설정
 app.use(express.json());
 app.use(morgan("dev"));
 app.use(express.urlencoded({ extended: true }));
@@ -23,7 +37,7 @@ app.use(cookieParser());
 // DB 연결
 connectDB();
 
-// 라우트 설정
+// API 라우트 설정
 app.use("/api/auth", authRoutes);
 app.use("/api/blog", blogRoutes);
 app.use("/api/dashboard", dashboardRoutes);
@@ -38,7 +52,7 @@ app.use((req, res, next) => {
   res.status(404).json({ message: "Resource not found" });
 });
 
-// 에러 핸들러 미들웨어
+// 에러 핸들러
 app.use(errorHandler);
 
 // 서버 시작
