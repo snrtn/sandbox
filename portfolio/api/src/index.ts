@@ -14,20 +14,9 @@ dotenv.config();
 
 const app = express();
 
-// CORS 설정
-const allowedOrigins = [
-  "http://localhost:3000", // 로컬 개발 환경
-  "https://your-vercel-app.vercel.app", // Vercel에 배포된 클라이언트 주소
-];
-
+// 임시 CORS 설정 (모든 도메인 허용)
 const corsOptions = {
-  origin: (origin: any, callback: any) => {
-    if (allowedOrigins.indexOf(origin) !== -1 || !origin) {
-      callback(null, true); // 허용된 origin이거나 origin이 없는 경우(비공개) 허용
-    } else {
-      callback(new Error("Not allowed by CORS")); // 허용되지 않은 origin 차단
-    }
-  },
+  origin: "*", // 모든 도메인 허용
   credentials: true, // 쿠키 허용
   methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
   allowedHeaders: ["Content-Type", "Authorization"],
