@@ -1,0 +1,100 @@
+{
+	"navigation": {
+		"home": "Home",
+		"about": "About",
+		"kim": "Skills",
+		"experience": "Experience",
+		"blog": "Blog",
+		"project": "Projects",
+		"contact": "Contact",
+		"dashboard": "Dashboard"
+	},
+	"about": {
+		"job": {
+			"title1": "Java",
+			"title2": "Salesforce",
+			"title3": "React",
+			"title4": "OpenClassrooms",
+			"content1": "JPA, Spring, HTTP",
+			"content2": "Lightning Web Components (LWC), Apex (Strongly Typed, Java)",
+			"content3": "React, TypeScript, Redux, Styled-components, MUI",
+			"content4": "Software Developer (Level 6 Bachelor +3/4 level) certification, Web Developer (Level 5 Bachelor +2 level) certification",
+			"detail1": "I am studying the polymorphism and classes of Java to write efficient object-oriented programming.",
+			"detail2": "I am deepening my understanding of object-oriented languages by utilizing Spring and JPA, and I am currently looking for an apprenticeship contract.",
+			"detail3": "I developed a managed digital resume project within the company, created a demo page, and designed various forms (promotion, participant, questionnaire, etc.).",
+			"detail4": "I performed full-stack development using LWC and APEX, and created desktop and mobile web designs using Figma.",
+			"detail5": "I participated in the shooting management software project, where I was responsible for A-Z mobile design and UI development. Additionally, I created a demo page.",
+			"detail6": "I performed front-end development using React and TypeScript, and created desktop, tablet, and mobile web designs using Figma.",
+			"detail7": "I learned how to add animations using JavaScript and handle complex data by integrating with APIs. I developed dynamic web applications using the React framework, managed state with Redux, and acquired back-end development skills using Node.js, Express, and MongoDB. I also learned SEO optimization and web accessibility improvement techniques to enhance website performance."
+		},
+		"kim": {
+			"title1": "Back-End Development Experience",
+			"title2": "Front-End Development Experience",
+			"title3": "Agile Methodology and Team Collaboration",
+			"title4": "Continuous Growth and Development",
+			"description1": "Currently, I am learning the basics of Java and studying overall back-end development through the Java framework Spring. After learning the basic syntax of Java and the concepts of object-oriented programming, I am understanding the fundamental principles and structures of back-end development by learning powerful frameworks such as Spring Boot.",
+			"description2": "In front-end development, I mainly used React and TypeScript. By leveraging React's component-based architecture, I designed reusable UI components and improved code readability and maintainability through TypeScript. These skills allowed me to create an efficient working environment even for large-scale projects.",
+			"description3": "Project management and team collaboration are also among my strengths. Through project management experience based on agile methodology, I communicated and cooperated efficiently with team members to successfully lead projects. By adopting the Scrum technique, I established sprint plans, shared team progress through daily stand-up meetings, and improved projects by reflecting continuous feedback.",
+			"description4": "In the future, I will strive to become a developer who continuously grows and develops. I will learn the latest technology trends and new tools, and apply them to practical work to propose better solutions. Additionally, I will contribute to open-source projects, exchange with developer communities to gain diverse perspectives and experiences, and further strengthen my technical capabilities."
+		}
+	},
+	"home": {
+		"techniqueIcon": {
+			"title": "Tech Stack"
+		},
+		"services": {
+			"title1": "Project Experience",
+			"description1": "I have full-stack development experience using Apex(Java) and React in various projects. I utilized Redux for state management and conducted styling with Styled-components and MUI. I can handle SQL and NoSQL databases and also performed design work through Figma.",
+			"title2": "Effort",
+			"description2": "I participate in developer communities to refer to various logics, develop new logics through research, and test them to improve my development skills."
+		},
+		"about": {
+			"title": "About",
+			"description": "I have back-end development experience using Apex(Java) and front-end development experience using React and TypeScript. I use Redux.js for state management and Styled-components and Material-UI for styling. Through these diverse experiences, I have acquired full-stack development capabilities and improved my project management and team collaboration skills based on agile methodology. I will continue to grow and develop as a developer."
+		},
+		"jumbotron": {
+			"title": "Hello, my name is",
+			"description": "Hanjun Kim,",
+			"description1": "I am a Developer web."
+		},
+		"blog": {
+			"title": "Blog",
+			"description": "Check out the latest blog posts",
+			"button": "More"
+		},
+		"contact": {
+			"title": "Contact",
+			"cardTitle1": "Email",
+			"cardTitle2": "France",
+			"cardTitle3": "Volunteer",
+			"description1": "Write an email",
+			"description2": "Île-de-France, Hauts-de-Seine",
+			"description3": "Create a site for free"
+		}
+	},
+	"contact": {
+		"title": "Contact",
+		"name": "Name",
+		"nameError": "Please enter your name",
+		"email": "Email",
+		"emailError": "Please enter a valid email",
+		"subject": "Subject",
+		"subjectError": "Please enter a subject",
+		"message": "Message",
+		"messageError": "Please enter a message",
+		"button": "Send"
+	},
+	"auth": {
+		"title": "Login",
+		"usernameLabel": "Username",
+		"usernameRequired": "Username is required",
+		"usernameInvalid": "Username must contain only English letters",
+		"passwordLabel": "Password",
+		"passwordRequired": "Password is required",
+		"passwordInvalid": "Password must be at least 8 characters long and contain at least one uppercase letter, one number, and one special character",
+		"submitButton": "Login"
+	},
+	"notFound": {
+		"title": "404 - Page Not Found"
+	}
+}
