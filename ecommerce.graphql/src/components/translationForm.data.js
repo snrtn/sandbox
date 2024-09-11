@@ -1,0 +1,53 @@
+export const materialsOptions = {
+  en: [
+    "Cotton",
+    "Polyester",
+    "Silk",
+    "Wool",
+    "Linen",
+    "Leather",
+    "Denim",
+    "Nylon",
+    "Rayon",
+    "Spandex",
+  ],
+  fr: [
+    "Coton",
+    "Polyester",
+    "Soie",
+    "Laine",
+    "Lin",
+    "Cuir",
+    "Denim",
+    "Nylon",
+    "Rayonne",
+    "Élasthanne",
+  ],
+};
+
+export const careInstructionsOptions = {
+  en: [
+    "Machine wash cold",
+    "Tumble dry low",
+    "Do not bleach",
+    "Iron on low",
+    "Dry clean only",
+    "Hand wash",
+    "Do not iron",
+    "Line dry",
+    "Use fabric softener",
+    "Wash with like colors",
+  ],
+  fr: [
+    "Lavage en machine à froid",
+    "Séchage en tambour à basse température",
+    "Ne pas utiliser d'eau de Javel",
+    "Repasser à basse température",
+    "Nettoyage à sec uniquement",
+    "Lavage à la main",
+    "Ne pas repasser",
+    "Sécher à la corde",
+    "Utiliser un adoucissant",
+    "Laver avec des couleurs similaires",
+  ],
+};
