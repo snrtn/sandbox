@@ -6,34 +6,12 @@ import dashboardRoutes from "./routes/dashboardRoutes";
 import dotenv from "dotenv";
 import morgan from "morgan";
 import helmet from "helmet";
-import cors from "cors";
 import errorHandler from "./middlewares/errorHandler";
 import cookieParser from "cookie-parser";
 
 dotenv.config();
 
 const app = express();
-
-const corsOptions = {
-  origin: process.env.ORIGIN || "https://portfolioui-nu.vercel.app",
-  credentials: true, // 쿠키 등 자격 증명을 함께 허용
-  methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
-  allowedHeaders: ["Content-Type", "Authorization"],
-  preflightContinue: false,
-  optionsSuccessStatus: 204, // 프리플라이트 요청에 대한 성공 상태 코드
-};
-
-// CORS 미들웨어 적용
-app.use(cors(corsOptions));
-
-// CORS 설정이 적용되었는지 확인하는 미들웨어
-app.use((req, res, next) => {
-  console.log("CORS settings applied:", corsOptions);
-  next();
-});
-
-// 프리플라이트 요청을 위한 OPTIONS 메서드 처리
-app.options("*", cors(corsOptions));
 
 // 미들웨어 설정
 app.use(express.json());
