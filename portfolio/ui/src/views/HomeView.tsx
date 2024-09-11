@@ -18,8 +18,8 @@ const HomeView = () => {
       <About />
       <Service />
       <TechniqueIcon />
-      {/* <Blog /> */}
-      {/* <Contact /> */}
+      <Blog />
+      <Contact />
     </div>
   );
 };
