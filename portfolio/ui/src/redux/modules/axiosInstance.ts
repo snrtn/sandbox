@@ -2,7 +2,7 @@ import axios from "axios";
 import { getCookie, clearAuthToken } from "./auth";
 
 const axiosInstance = axios.create({
-  baseURL: "https://portfolioapi-liart.vercel.app/",
+  baseURL: "https://portfolioapi-liart.vercel.app",
   headers: {
     "Content-Type": "application/json",
   },
