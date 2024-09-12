@@ -14,9 +14,13 @@ dotenv.config();
 
 const app = express();
 
+// CORS 설정
 app.use(
   cors({
-    origin: "https://portfolioui-nu.vercel.app",
+    origin: "https://portfolioui-nu.vercel.app", // 허용할 도메인
+    credentials: true, // 자격 증명(쿠키 등)을 허용
+    methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"], // 허용할 HTTP 메소드
+    allowedHeaders: ["Content-Type", "Authorization"], // 허용할 헤더
   })
 );
 
