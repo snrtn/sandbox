@@ -16,11 +16,9 @@ const app = express();
 
 // CORS 설정
 const corsOptions = {
-  origin: process.env.ORIGIN || "https://portfolioui-nu.vercel.app", // 클라이언트 주소
-  credentials: true, // 쿠키를 허용
-  methods: ["GET", "POST", "PUT", "DELETE"],
+  origin: process.env.ORIGIN,
+  methods: ["GET", "POST"],
   allowedHeaders: ["Content-Type", "Authorization"],
-  preflightContinue: false,
 };
 
 // CORS 미들웨어 적용
