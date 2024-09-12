@@ -6,23 +6,31 @@ import dashboardRoutes from "./routes/dashboardRoutes";
 import dotenv from "dotenv";
 import morgan from "morgan";
 import helmet from "helmet";
-import cors from "cors"; // CORS 미들웨어
-import errorHandler from "./middlewares/errorHandler";
 import cookieParser from "cookie-parser";
+import errorHandler from "./middlewares/errorHandler";
 
 dotenv.config();
 
 const app = express();
 
 // CORS 설정
-const corsOptions = {
-  origin: process.env.ORIGIN,
-  methods: ["GET", "POST"],
-  allowedHeaders: ["Content-Type", "Authorization"],
-};
+app.use(function (req, res, next) {
+  // 특정 도메인만 허용하려면 아래에서 "https://your-frontend-url.com"을 실제 도메인으로 변경
+  res.setHeader(
+    "Access-Control-Allow-Origin",
+    process.env.ORIGIN || "https://portfolioui-nu.vercel.app/"
+  );
+  res.setHeader(
+    "Access-Control-Allow-Methods",
+    "GET, POST, PUT, DELETE, OPTIONS"
+  );
+  res.setHeader("Access-Control-Allow-Headers", "Content-Type, Authorization");
 
-// CORS 미들웨어 적용
-app.use(cors(corsOptions));
+  // boolean 대신 string으로 변환 (TypeScript 오류 해결)
+  res.setHeader("Access-Control-Allow-Credentials", "true"); // 반드시 문자열 "true"로 설정
+
+  next();
+});
 
 // 기타 미들웨어 설정
 app.use(express.json());
@@ -35,9 +43,9 @@ app.use(cookieParser());
 connectDB();
 
 // API 라우트 설정
-app.use("/api/auth", cors(corsOptions), authRoutes);
-app.use("/api/blog", cors(corsOptions), blogRoutes);
-app.use("/api/dashboard", cors(corsOptions), dashboardRoutes);
+app.use("/api/auth", authRoutes);
+app.use("/api/blog", blogRoutes);
+app.use("/api/dashboard", dashboardRoutes);
 
 // 기본 라우트
 app.get("/", (req, res) => {
