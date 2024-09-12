@@ -7,21 +7,22 @@ import dotenv from "dotenv";
 import morgan from "morgan";
 import helmet from "helmet";
 import cookieParser from "cookie-parser";
+import cors from "cors"; // CORS 미들웨어 추가
 import errorHandler from "./middlewares/errorHandler";
 
 dotenv.config();
 
 const app = express();
 
-app.options("*", (req, res) => {
-  res.setHeader(
-    "Access-Control-Allow-Methods",
-    "GET, POST, PUT, DELETE, OPTIONS"
-  );
-  res.setHeader("Access-Control-Allow-Headers", "Content-Type, Authorization");
-  res.setHeader("Access-Control-Allow-Credentials", "true");
-  res.status(204).send();
-});
+// CORS 설정
+const corsOptions = {
+  origin: process.env.ORIGIN || "https://portfolioui-nu.vercel.app", // 허용할 도메인
+  credentials: true, // 자격 증명(쿠키 등)을 허용
+  methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+  allowedHeaders: ["Content-Type", "Authorization"],
+};
+
+app.use(cors(corsOptions)); // CORS 미들웨어 적용
 
 // 기타 미들웨어 설정
 app.use(express.json());
