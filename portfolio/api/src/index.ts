@@ -6,7 +6,6 @@ import dashboardRoutes from "./routes/dashboardRoutes";
 import dotenv from "dotenv";
 import morgan from "morgan";
 import helmet from "helmet";
-import cors from "cors"; // CORS 미들웨어
 import errorHandler from "./middlewares/errorHandler";
 import cookieParser from "cookie-parser";
 
@@ -14,19 +13,17 @@ dotenv.config();
 
 const app = express();
 
-// 임시 CORS 설정 (모든 도메인 허용)
-const corsOptions = {
-  origin: "*", // 모든 도메인 허용
-  credentials: true, // 쿠키 허용
-  methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
-  allowedHeaders: ["Content-Type", "Authorization"],
-  preflightContinue: false,
-  optionsSuccessStatus: 204, // 프리플라이트 요청에 대한 응답 코드
-};
-
-// CORS 미들웨어 적용
-app.use(cors(corsOptions));
-app.options("*", cors(corsOptions)); // 모든 OPTIONS 요청에 대해 CORS 적용
+// 직접 CORS 헤더 설정
+app.use(function (req, res, next) {
+  res.setHeader(
+    "Access-Control-Allow-Origin",
+    process.env.ORIGIN || "https://portfolioui-nu.vercel.app"
+  ); // 클라이언트 주소
+  res.setHeader("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE");
+  res.setHeader("Access-Control-Allow-Headers", "Content-Type, Authorization");
+  res.setHeader("Access-Control-Allow-Credentials", String(true)); // boolean 값
+  next();
+});
 
 // 기타 미들웨어 설정
 app.use(express.json());
