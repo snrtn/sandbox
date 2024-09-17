@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import { options } from "./ProductStepForm.data";
+import Image from "next/image";
 
 // 인터페이스
 interface ProductData {
@@ -154,7 +155,7 @@ const ProductStepForm: React.FC<ProductStepFormProps> = ({ onComplete }) => {
           >
             <option value="">Select Category</option>
             {isValidGender(productData.gender) &&
-              options[productData.gender].categories.map((category: any) => (
+              options[productData.gender].categories.map((category: never) => (
                 <option key={category} value={category}>
                   {category}
                 </option>
@@ -226,10 +227,12 @@ const ProductStepForm: React.FC<ProductStepFormProps> = ({ onComplete }) => {
               className="block w-full p-2 border border-gray-300 rounded-md"
             />
             {imagePreviews[view as keyof typeof imagePreviews] && (
-              <img
+              <Image
                 src={imagePreviews[view as keyof typeof imagePreviews]}
                 alt={`${view} preview`}
                 className="mt-2 w-24 h-24 object-cover"
+                width={400}
+                height={400}
               />
             )}
           </div>

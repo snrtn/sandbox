@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 export const options: Record<"unisex" | "male" | "female", any> = {
   unisex: {
     categories: ["Tops", "Bottoms", "Accessories", "Outerwear"],

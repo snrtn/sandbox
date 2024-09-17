@@ -121,6 +121,11 @@ const TranslationForm: React.FC<TranslationFormProps> = ({ onComplete }) => {
     ]);
   };
 
+  const removeTranslation = (index: number) => {
+    const updatedTranslations = translations.filter((_, i) => i !== index);
+    setTranslations(updatedTranslations);
+  };
+
   return (
     <div className="p-6 bg-white shadow-lg rounded-md">
       <h2 className="text-xl font-bold mb-4">Product Translations</h2>
@@ -141,9 +146,17 @@ const TranslationForm: React.FC<TranslationFormProps> = ({ onComplete }) => {
             key={index}
             className="mb-6 p-4 border border-gray-200 rounded-md"
           >
-            <h3 className="text-lg font-semibold mb-4">
-              Translation {index + 1}
-            </h3>
+            <div className="flex justify-between items-center">
+              <h3 className="text-lg font-semibold mb-4">
+                Translation {index + 1}
+              </h3>
+              <button
+                onClick={() => removeTranslation(index)}
+                className="bg-red-500 text-white px-3 py-1 rounded-md hover:bg-red-600 transition"
+              >
+                Remove Translation
+              </button>
+            </div>
 
             {/* Language Selector */}
             <div className="mb-4">
