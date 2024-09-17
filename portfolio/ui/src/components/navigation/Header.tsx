@@ -101,9 +101,9 @@ const Header: React.FC = () => {
         </HeaderLogoWrapper>
         <HeaderNav onMouseLeave={handleMouseLeave}>
           <ul>
-            <li onMouseEnter={() => handleMouseEnter("home")}>
+            {/* <li onMouseEnter={() => handleMouseEnter("home")}>
               <HeaderCustomLink to="/">{t("navigation.home")}</HeaderCustomLink>
-            </li>
+            </li> */}
             <li onMouseEnter={() => handleMouseEnter("about")}>
               <HeaderCustomLink to="#">
                 {t("navigation.about")}
@@ -125,18 +125,18 @@ const Header: React.FC = () => {
                       {t("navigation.experience")}
                     </HeaderCustomLink>
                   </li>
-                  <li>
+                  {/* <li>
                     <HeaderCustomLink
                       to="/experience"
                       onClick={() => setActiveMenu(null)}
                     >
                       {t("navigation.kim")}
                     </HeaderCustomLink>
-                  </li>
+                  </li> */}
                 </HeaderDropdownMenu>
               </Collapse>
             </li>
-            <li onMouseEnter={() => handleMouseEnter("blog")}>
+            {/* <li onMouseEnter={() => handleMouseEnter("blog")}>
               <HeaderCustomLink to="/blog">
                 {t("navigation.blog")}
               </HeaderCustomLink>
@@ -152,7 +152,7 @@ const Header: React.FC = () => {
                   {t("navigation.dashboard")}
                 </HeaderCustomLink>
               </li>
-            )}
+            )} */}
           </ul>
         </HeaderNav>
         <HeaderLanguageSwitcher>
@@ -162,9 +162,6 @@ const Header: React.FC = () => {
             displayEmpty
             inputProps={{ "aria-label": "Without label" }}
           >
-            <MenuItem value="en">
-              <HeaderStyledReactCountryFlag countryCode="US" svg />
-            </MenuItem>
             <MenuItem value="fr">
               <HeaderStyledReactCountryFlag countryCode="FR" svg />
             </MenuItem>
@@ -172,7 +169,7 @@ const Header: React.FC = () => {
               <HeaderStyledReactCountryFlag countryCode="KR" svg />
             </MenuItem>
           </Select>
-          {token ? (
+          {/* {token ? (
             <>
               <IconButton
                 edge="end"
@@ -193,7 +190,7 @@ const Header: React.FC = () => {
             >
               <PiSignInBold />
             </IconButton>
-          )}
+          )} */}
         </HeaderLanguageSwitcher>
       </HeaderToolbar>
       <HeaderStyledDrawer
@@ -208,9 +205,9 @@ const Header: React.FC = () => {
             </Link>
           </HeaderLogoWrapper>
           <List>
-            <HeaderStyledListItem as={Link} to="/" onClick={closeDrawer}>
+            {/* <HeaderStyledListItem as={Link} to="/" onClick={closeDrawer}>
               <HeaderStyledListItemText primary={t("navigation.home")} />
-            </HeaderStyledListItem>
+            </HeaderStyledListItem> */}
             <HeaderStyledListItem onClick={() => handleItemClick("about")}>
               <HeaderStyledListItemText primary={t("navigation.about")} />
             </HeaderStyledListItem>
@@ -225,16 +222,16 @@ const Header: React.FC = () => {
                     primary={t("navigation.experience")}
                   />
                 </HeaderStyledListItem>
-                <HeaderStyledListItem
+                {/* <HeaderStyledListItem
                   as={Link}
                   to="/experience"
                   onClick={closeDrawer}
                 >
                   <HeaderStyledListItemText primary={t("navigation.kim")} />
-                </HeaderStyledListItem>
+                </HeaderStyledListItem> */}
               </List>
             </Collapse>
-            <HeaderStyledListItem as={Link} to="/blog" onClick={closeDrawer}>
+            {/* <HeaderStyledListItem as={Link} to="/blog" onClick={closeDrawer}>
               <HeaderStyledListItemText primary={t("navigation.blog")} />
             </HeaderStyledListItem>
             <HeaderStyledListItem as={Link} to="/contact" onClick={closeDrawer}>
@@ -248,7 +245,7 @@ const Header: React.FC = () => {
               >
                 <HeaderStyledListItemText primary={t("navigation.dashboard")} />
               </HeaderStyledListItem>
-            )}
+            )} */}
           </List>
         </HeaderSidebar>
       </HeaderStyledDrawer>

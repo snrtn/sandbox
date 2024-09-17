@@ -21,14 +21,14 @@ const App: React.FC = () => {
         <Route index element={<HomeView />} />
         <Route path="auth" element={<AuthView />} />
         <Route path="about" element={<AboutView />} />
-        <Route path="experience" element={<ExperienceView />} />
-        <Route path="blog" element={<BlogView />} />
+        {/* <Route path="experience" element={<ExperienceView />} /> */}
+        {/* <Route path="blog" element={<BlogView />} />
         <Route path="blog/:id" element={<BlogPageView />} />
         <Route path="contact" element={<ContactView />} />
         <Route path="dashboard" element={<PrivateRoute redirectPath="/auth" />}>
           <Route path="" element={<DashboardView />} />
         </Route>
-        <Route path="*" element={<NotFoundView />} />
+        <Route path="*" element={<NotFoundView />} /> */}
       </Route>
     </Routes>
   );

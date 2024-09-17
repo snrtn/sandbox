@@ -17,9 +17,9 @@ const HomeView = () => {
       <Jumbotron />
       <About />
       <Service />
-      <TechniqueIcon />
-      <Blog />
-      <Contact />
+      {/* <TechniqueIcon /> */}
+      {/* <Blog /> */}
+      {/* <Contact /> */}
     </div>
   );
 };

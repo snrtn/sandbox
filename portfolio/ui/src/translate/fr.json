@@ -1,100 +1,98 @@
 {
-	"navigation": {
-		"home": "Accueil",
-		"about": "À propos",
-		"kim": "Compétences",
-		"experience": "Expérience",
-		"blog": "Blog",
-		"project": "Projets",
-		"contact": "Contact",
-		"dashboard": "Dashboard"
-	},
-	"about": {
-		"job": {
-			"title1": "Java",
-			"title2": "Salesforce",
-			"title3": "React",
-			"title4": "OpenClassrooms",
-			"content1": "JPA, Spring, HTTP",
-			"content2": "Lightning Web Components (LWC), Apex (Strongly Typed, Java)",
-			"content3": "React, TypeScript, Redux, Styled-components, MUI",
-			"content4": "Certification de Développeur Logiciel (niveau Bac +3/4), certification de Développeur Web (niveau Bac +2)",
-			"detail1": "J'étudie le polymorphisme et les classes de Java pour écrire une programmation orientée objet efficace.",
-			"detail2": "J'approfondis ma compréhension des langages orientés objet en utilisant Spring et JPA, et je cherche actuellement un contrat d'apprentissage.",
-			"detail3": "J'ai développé un projet de CV numérique géré au sein de l'entreprise, créé une page de démonstration et conçu divers formulaires (promotion, participant, questionnaire, etc.).",
-			"detail4": "J'ai effectué un développement full-stack en utilisant LWC et APEX, et créé des designs web pour bureau et mobile avec Figma.",
-			"detail5": "J'ai participé au projet de logiciel de gestion des tournages, où j'étais responsable de la conception mobile de A à Z et du développement de l'UI. De plus, j'ai créé une page de démonstration.",
-			"detail6": "J'ai effectué le développement front-end en utilisant React et TypeScript, et créé des designs web pour bureau, tablette et mobile avec Figma.",
-			"detail7": "J'ai appris à ajouter des animations en utilisant JavaScript et à gérer des données complexes en les intégrant avec des APIs. J'ai développé des applications web dynamiques en utilisant le framework React, géré l'état avec Redux, et acquis des compétences en développement back-end en utilisant Node.js, Express et MongoDB. J'ai également appris des techniques d'optimisation SEO et d'amélioration de l'accessibilité web pour améliorer les performances du site web."
-		},
-		"kim": {
-			"title1": "Expérience en développement Back-End",
-			"title2": "Expérience en développement Front-End",
-			"title3": "Méthodologie Agile et Collaboration en Équipe",
-			"title4": "Croissance et Développement Continus",
-			"description1": "Actuellement, j'apprends les bases de Java et étudie le développement back-end global à travers le framework Java Spring. Après avoir appris la syntaxe de base de Java et les concepts de la programmation orientée objet, je comprends les principes fondamentaux et les structures du développement back-end en apprenant des frameworks puissants tels que Spring Boot.",
-			"description2": "En développement front-end, j'ai principalement utilisé React et TypeScript. En tirant parti de l'architecture basée sur les composants de React, j'ai conçu des composants UI réutilisables et amélioré la lisibilité et la maintenabilité du code grâce à TypeScript. Ces compétences m'ont permis de créer un environnement de travail efficace même pour des projets à grande échelle.",
-			"description3": "La gestion de projet et la collaboration en équipe font également partie de mes points forts. Grâce à mon expérience de gestion de projet basée sur la méthodologie agile, j'ai communiqué et coopéré efficacement avec les membres de l'équipe pour mener à bien des projets. En adoptant la technique Scrum, j'ai établi des plans de sprint, partagé les progrès de l'équipe lors des réunions debout quotidiennes et amélioré les projets en tenant compte des retours continus.",
-			"description4": "À l'avenir, je m'efforcerai de devenir un développeur en croissance et en développement continus. J'apprendrai les dernières tendances technologiques et les nouveaux outils, et les appliquerai au travail pratique pour proposer de meilleures solutions. De plus, je contribuerai à des projets open-source, échangerai avec les communautés de développeurs pour acquérir diverses perspectives et expériences, et renforcerai davantage mes capacités techniques."
-		}
-	},
-	"home": {
-		"techniqueIcon": {
-			"title": "Tech Stack"
-		},
-		"services": {
-			"title1": "Expérience de Projet",
-			"description1": "J'ai une expérience de développement full-stack utilisant des Apex(Java) et React dans divers projets. J'ai utilisé Redux pour la gestion d'état et effectué le stylisme avec Styled-components et MUI. Je peux gérer des bases de données SQL et NoSQL et j'ai également effectué des travaux de conception via Figma.",
-			"title2": "Effort",
-			"description2": "Je participe à des communautés de développeurs pour référer à diverses logiques, développer de nouvelles logiques grâce à la recherche et les tester pour améliorer mes compétences en développement."
-		},
-		"about": {
-			"title": "À propos",
-			"description": "J'ai une expérience de développement back-end en utilisant des Apex(Java) et une expérience de développement front-end en utilisant React et TypeScript. J'utilise Redux.js pour la gestion d'état et Styled-components et Material-UI pour le stylisme. Grâce à ces diverses expériences, j'ai acquis des capacités de développement full-stack et amélioré mes compétences en gestion de projet et en collaboration d'équipe basées sur la méthodologie agile. Je continuerai à grandir et à me développer en tant que développeur."
-		},
-		"jumbotron": {
-			"title": "Bonjour, je m'appelle",
-			"description": "Hanjun Kim,",
-			"description1": "Je suis Développeur web."
-		},
-		"blog": {
-			"title": "Blog",
-			"description": "Consultez les derniers articles de blog",
-			"button": "Plus"
-		},
-		"contact": {
-			"title": "Contact",
-			"cardTitle1": "Email",
-			"cardTitle2": "France",
-			"cardTitle3": "Bénévole",
-			"description1": "Écrire un email",
-			"description2": "Île-de-France, Hauts-de-Seine",
-			"description3": "Créer un site gratuitement"
-		}
-	},
-	"contact": {
-		"title": "Contact",
-		"name": "Nom",
-		"nameError": "Veuillez entrer votre nom",
-		"email": "Email",
-		"emailError": "Veuillez entrer un email valide",
-		"subject": "Sujet",
-		"subjectError": "Veuillez entrer un sujet",
-		"message": "Message",
-		"messageError": "Veuillez entrer un message",
-		"button": "Envoyer"
-	},
-	"auth": {
-		"title": "Connexion",
-		"usernameLabel": "Nom d'utilisateur",
-		"usernameRequired": "Le nom d'utilisateur est requis",
-		"usernameInvalid": "Le nom d'utilisateur ne doit contenir que des lettres anglaises",
-		"passwordLabel": "Mot de passe",
-		"passwordRequired": "Le mot de passe est requis",
-		"passwordInvalid": "Le mot de passe doit comporter au moins 8 caractères et contenir au moins une lettre majuscule, un chiffre et un caractère spécial",
-		"submitButton": "Connexion"
-	},
-	"notFound": {
-		"title": "404 - Page non trouvée"
-	}
+  "navigation": {
+    "home": "Accueil",
+    "about": "À propos",
+    "kim": "Compétences",
+    "experience": "Expérience",
+    "blog": "Blog",
+    "project": "Projets",
+    "contact": "Contact",
+    "dashboard": "Dashboard"
+  },
+  "about": {
+    "job": {
+      "title1": "Java",
+      "title2": "Salesforce",
+      "title3": "React",
+      "title4": "OpenClassrooms",
+      "content1": "JPA, Spring, HTTP",
+      "content2": "Lightning Web Components (LWC), Apex (Strongly Typed, Java)",
+      "content3": "React, TypeScript, Redux, Styled-components, MUI",
+      "content4": "Certification de Développeur Logiciel (niveau Bac +3/4), certification de Développeur Web (niveau Bac +2)",
+      "detail1": "J'étudie le polymorphisme et les classes de Java pour écrire une programmation orientée objet efficace.",
+      "detail2": "J'approfondis ma compréhension des langages orientés objet en utilisant Spring et JPA, et je cherche actuellement un contrat d'apprentissage.",
+      "detail3": "J'ai développé un projet de CV numérique géré au sein de l'entreprise, créé une page de démonstration et conçu divers formulaires (promotion, participant, questionnaire, etc.).",
+      "detail4": "J'ai effectué un développement full-stack en utilisant LWC et APEX, et créé des designs web pour bureau et mobile avec Figma.",
+      "detail5": "J'ai participé au projet de logiciel de gestion des tournages, où j'étais responsable de la conception mobile de A à Z et du développement de l'UI. De plus, j'ai créé une page de démonstration.",
+      "detail6": "J'ai effectué le développement front-end en utilisant React et TypeScript, et créé des designs web pour bureau, tablette et mobile avec Figma.",
+      "detail7": "J'ai appris à ajouter des animations en utilisant JavaScript et à gérer des données complexes en les intégrant avec des APIs. J'ai développé des applications web dynamiques en utilisant le framework React, géré l'état avec Redux, et acquis des compétences en développement back-end en utilisant Node.js, Express et MongoDB. J'ai également appris des techniques d'optimisation SEO et d'amélioration de l'accessibilité web pour améliorer les performances du site web."
+    },
+    "kim": {
+      "title1": "DÉVELOPPEUR FULL-STACK",
+      "title2": "Développeur Salesforce",
+      "title3": "Développeur React",
+      "title4": "Étudiant, Développeur Web",
+      "description1": "Actuellement, j'apprends les bases de Java et étudie le développement back-end global à travers le framework Java Spring. Après avoir appris la syntaxe de base de Java et les concepts de la programmation orientée objet, je comprends les principes fondamentaux et les structures du développement back-end en apprenant des frameworks puissants tels que Spring Boot.",
+      "description2": "Développement d'un système permettant aux employés d'enrichir leur CV avec leurs compétences professionnelles, en utilisant Lightning Web Components (LWC) et Apex.\n Migration d'un projet existant d'Aura Components et Visualforce vers LWC, avec amélioration des performances et de l'expérience utilisateur.\n Conception de maquettes web et mobile sur Figma, et développement de pages web réactives en LWC, optimisées pour tous les appareils.\n Mise en place d'un processus automatisé d'envoi d'e-mails pour simplifier la communication, avec des notifications automatiques pour les mises à jour des CV et les approbations.",
+      "description3": "Développement front-end d'un site de gestion de photos professionnelles avec React et TypeScript, en utilisant Redux pour la gestion d'état et styled-components ainsi que MUI pour le développement du style et de l'interface utilisateur.\n Le projet initial ne comportait qu'un design pour desktop, mais grâce à Figma, des designs pour tablette et mobile ont été créés.\n De plus, j'ai réalisé la création d'icônes ainsi que le développement du style global en CSS-in-JS. Création d'une maquette de démo, développement de la landing page, et retouche d'images avec Adobe Photoshop pour améliorer la qualité visuelle.",
+      "description4": "J'ai travaillé sur le développement d'interfaces avec HTML, CSS et JavaScript, ainsi que sur la création d'applications avec React et React Router pour la navigation. J'ai également utilisé Redux pour la gestion d'état et intégré des API REST. En plus, j'ai acquis des compétences dans l'implémentation d'animations avec Sass et CSS, ainsi que dans le développement d'algorithmes en JavaScript. Du côté back-end, j'ai travaillé avec Node.js et Express, tout en gérant les données avec MongoDB.\n J'ai appris à gérer les versions de projet avec Git et GitHub, à optimiser le SEO et l'accessibilité web, à déboguer des applications SaaS, et à appliquer des méthodologies agiles pour la planification, la gestion de projets et pour répondre aux besoins des clients."
+    }
+  },
+  "home": {
+    "techniqueIcon": {
+      "title": "Tech Stack"
+    },
+    "services": {
+      "title1": "Effort",
+      "description1": "Je vise à développer un code efficace et maintenable en résolvant des problèmes et en apprenant continuellement"
+    },
+    "about": {
+      "title": "À propos",
+      "description": "Développement de systèmes avec LWC et Apex, notamment la migration de projets d'Aura Components et Visualforce vers LWC pour améliorer les performances et l'expérience utilisateur. Conception et développement d'interfaces réactives en React et TypeScript avec gestion d'état via Redux et style avec MUI et styled-components. Création de maquettes web et mobile sur Figma, ainsi que des icônes et pages optimisées pour tous les appareils."
+    },
+    "jumbotron": {
+      "title": "Bonjour, je m'appelle",
+      "description": "Hanjun Kim,",
+      "description1": "Je suis Développeur web"
+    },
+    "blog": {
+      "title": "Blog",
+      "description": "Consultez les derniers articles de blog",
+      "button": "Plus"
+    },
+    "contact": {
+      "title": "Contact",
+      "cardTitle1": "Email",
+      "cardTitle2": "France",
+      "cardTitle3": "Bénévole",
+      "description1": "Écrire un email",
+      "description2": "Île-de-France, Hauts-de-Seine",
+      "description3": "Créer un site gratuitement"
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "name": "Nom",
+    "nameError": "Veuillez entrer votre nom",
+    "email": "Email",
+    "emailError": "Veuillez entrer un email valide",
+    "subject": "Sujet",
+    "subjectError": "Veuillez entrer un sujet",
+    "message": "Message",
+    "messageError": "Veuillez entrer un message",
+    "button": "Envoyer"
+  },
+  "auth": {
+    "title": "Connexion",
+    "usernameLabel": "Nom d'utilisateur",
+    "usernameRequired": "Le nom d'utilisateur est requis",
+    "usernameInvalid": "Le nom d'utilisateur ne doit contenir que des lettres anglaises",
+    "passwordLabel": "Mot de passe",
+    "passwordRequired": "Le mot de passe est requis",
+    "passwordInvalid": "Le mot de passe doit comporter au moins 8 caractères et contenir au moins une lettre majuscule, un chiffre et un caractère spécial",
+    "submitButton": "Connexion"
+  },
+  "notFound": {
+    "title": "404 - Page non trouvée"
+  }
 }
