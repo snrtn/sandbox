@@ -61,7 +61,7 @@ export const KimSectionContent = styled("div")<SectionContentProps>(
     transition: "opacity 0.5s ease-in-out",
     zIndex: 1,
     textAlign: "center",
-    padding: "0 45rem",
+    padding: "0 30rem",
     height: "100vh",
     boxSizing: "border-box",
     ...media.desktopSmall({

@@ -12,7 +12,6 @@ const useMediaQuery = (width: number): boolean => {
 
     // 초기 값 설정
     setIsTargetReached(media.matches);
-
     // 변경 사항 감지
     media.addEventListener("change", updateTarget);
 
